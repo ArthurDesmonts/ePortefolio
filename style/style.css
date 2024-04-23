@@ -1,171 +1,44 @@
-/*reset css + changement de la police général de la page*/
-*{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    z-index:0;
-}
-
-html,body{
-    margin:0;
-    padding:0;
-    width: 100%;
-    overflow: auto;
-}
-
-/*image en arrière plan*/
-html{
-    background-image : url(img/fond.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    z-index: -1000;
-}
-
-/*position du body*/
-body{
-    top : 120px;
-    position : relative;
-}
-
-/*div container*/
-.container{
-    margin : 0px 0px 0px;
-}
-
-/*style footer*/
-footer{
-    text-align: center;
-    left : 0;
-    right : 0;
-    background-color: #3C3C3D;
-    opacity: 80%;
-    color: white;
-    bottom : 0;
-}
-
-/*style h1*/
-h1{
-    color: Black;
-    text-align: center;
-}
-
-/*style p*/
-p{
-    margin : 0;
-    padding: 2em;
-}
-
-/*style ul*/
-ul{
-    list-style-type: none;
-    margin: 1em 0 1em 1em;
-    max-width : 25%;
-    border-radius: 2px;
-    transition: 0.5s ease;
-    background-color: #343333;
-    color: white;
-    opacity: 80%;
-}
-
-/*style li*/
-li{
+body {
     margin: 0;
     padding: 0;
-    transition: 0.5s ease;
-}
-
-/*style div ulHover au survole*/
-.ulHover:hover{
-    background-color: #343333;
-    opacity: 100%;
-    z-index: -100;
-}
-
-/*style div inlineList*/
-.inlineList ul{
-    display: inline-flex;
-    flex-wrap: wrap;
-    color: white;
-    width: 100%;
-}
-
-.inlineList li{
-    margin-left: 10px;
-}
-
-
-/*style h2 au survole*/
-h2:hover{
-    color: darkblue;
-}
-
-/*style h2*/
-h2{
-    color: lightblue;
-    font-size: 1.5em;
-    text-indent : 1em;
-    padding : 0;
-    width: max-content;
-    height:max-content;
-    transition: 0.5s ease;
-}
-
-
-/*syle de la nav bar*/
-nav{
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  #background {
     position: fixed;
     top: 0;
-    opacity: 100%;
-    text-align: center;
-    font-size: 1.5em;
-    z-index: 2;
-    background-color: black;
-    width: 100%;
-    height : 120px;
-}
-
-nav h1{
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul{
-    display: inline-flex;
-    background-color: #000000CC;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #B5B5B8  ;
-    margin-right : 2em;
-    transition: 0.5s ease;
-}
-
-nav ul li a:hover{
-    color: white;
-}
-
-/* la div 'dataList' est en block l'un à côté de l'autre */
-.dataList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-
-/*style du nom en haut de page*/
-.nomTop{
-    font-weight: bold;
-}
-
+    z-index: -1;
+  }
+  
+  #content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .bio {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .projects {
+    padding: 50px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
